@@ -1,0 +1,37 @@
+/* Paleta: Blanco y Café */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+header {
+    background-color: #6f4e37 !important;
+}
+
+h1, h2, h3 {
+    color: #4a2c2a;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f2e9e4;
+    color: #6f4e37;
+}
+
+.btn-primary {
+    background-color: #6f4e37;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4a2c2a;
+}
