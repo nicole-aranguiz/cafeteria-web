@@ -24,10 +24,14 @@
     </header>
 
     <main class="container mt-4">
-        <section id="inicio">
-            <h2>Bienvenidos a nuestro rincón especial</h2>
-            <p>Disfruta del mejor ambiente y el café de grano más fresco en Viña del Mar.</p>
-        </section>
+       
+
+<section id="inicio" class="text-center my-5">
+    <h2>Bienvenidos a nuestro rincón especial</h2>
+    <p>Disfruta del mejor ambiente y el café de grano más fresco en Viña del Mar.</p>
+    
+    <a href="#contacto" class="btn-personalizado btn-lg">Haz tu reserva aquí</a>
+</section>
 
         <section id="carta" class="my-5">
             <h2 class="text-center mb-4">Nuestra Carta</h2>
@@ -95,6 +99,11 @@
                     </div>
                 </article>
             </div>
+            <!-- Botón de pedido ayudado por IA para que quede centrado y con los colores pasteles que le pedi -->
+            <div class="text-center mt-4">
+                <a href="#contacto" class="btn btn-primary btn-lg">Haz tu pedido aquí</a>
+            </div>
+        </section> 
         </section>
 
         <section id="quienes-somos" class="my-5">
@@ -102,25 +111,62 @@
             <p>Somos una cafetería apasionada por la calidad y la atención cercana.</p>
         </section>
 
-        <section id="contacto" class="my-5">
-            <h2>Contacto</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" placeholder="+569 1234 5678">
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </section>
+      <section id="contacto" class="my-5">
+    <h2>Contacto</h2>
+    <!-- Formulario de contacto asistido por IA para mejorar la experiencia de usuario -->
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+        </div>
+
+       
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="+569 1234 5678">
+        </div>
+        
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+        </div>
+
+
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+<!-- Redes sociales añadidos con ayuda de IA -->
+<div class="text-center mt-4 pt-3 border-top">
+    <h5>Síguenos en nuestras redes sociales</h5>
+    <div class="mt-2">
+        <a href="#" class="btn btn-outline-secondary btn-sm mx-1">Instagram</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm mx-1">Facebook</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm mx-1">TikTok</a>
+    </div>
+</div>
+</section>
     </main>
 
-    <footer class="text-center py-4 mt-4">
-        <p>&copy; 2026 Lali la cafetería - Todos los derechos reservados.</p>
-    </footer>
-
+<footer class="text-center py-4 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h5>Dirección</h5>
+                <p>Av. Libertad 123, Viña del Mar, Chile.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h5>Horario de atención</h5>
+                <p>Lunes a Viernes: 08:00 - 20:00<br>Sábado y Domingo: 09:00 - 18:00</p>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2026 Lali la cafetería - Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>

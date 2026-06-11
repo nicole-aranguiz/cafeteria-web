@@ -1,37 +1,84 @@
-/* Paleta: Blanco y Café */
+/* Paleta de Colores: Elegancia Nude, Café y Rosa Palo */
+:root {
+    --color-fondo: #f9f4ef;          
+    --color-cafe-suave: #a68a7a;    
+    --color-rosa-palo: #d8b4a8;     
+    --color-texto: #5a4b43;         
+    --color-blanco: #ffffff;
+}
+
 body {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 header {
-    background-color: #6f4e37 !important;
+    background-color: var(--color-rosa-palo) !important;
 }
 
-h1, h2, h3 {
-    color: #4a2c2a;
+h1, h2, h3, h4 {
+    color: var(--color-cafe-suave);
+    font-weight: 700;
 }
 
+/* Navegación */
 .nav-link {
-    color: #ffffff !important;
-    font-weight: bold;
+    color: var(--color-blanco) !important;
+    font-weight: 500;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
+/* Tarjetas de productos */
+.card {
+    border: none; /* Quitamos el borde para un look más minimalista */
+    background-color: var(--color-blanco);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra muy sutil */
 }
 
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Footer y botones */
 footer {
-    background-color: #f2e9e4;
-    color: #6f4e37;
+    background-color: var(--color-rosa-palo);
+    color: var(--color-blanco);
 }
 
 .btn-primary {
-    background-color: #6f4e37;
+    background-color: var(--color-cafe-suave);
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #4a2c2a;
+    background-color: var(--color-rosa-palo);
+}
+
+/* Estilo para el botón de reserva */
+.btn-personalizado {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Tamaño adecuado */
+    font-size: 1.25rem;  /* Tamaño btn-lg */
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: 2px solid var(--color-rosa-palo);
+    color: var(--color-rosa-palo);
+    background-color: transparent;
+    border-radius: 0.3rem; /* Bordes redondeados estilo Bootstrap */
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.btn-personalizado:hover {
+    background-color: var(--color-rosa-palo);
+    color: var(--color-blanco);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Cambiar color de texto en el footer a gris oscuro */
+footer, footer h5, footer p {
+    color: #333333 !important;
 }
